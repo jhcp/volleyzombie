@@ -1,0 +1,116 @@
+Code authors
+============
+
+This program was created and developed by
+ - Jo„o Henrique C. Pimentel
+
+
+Asset attribution
+=================
+
+Assets were authored by the following people:
+
+--- IMAGES -----
+
+Lanea Zimmerman (AKA Sharm)∂
+  barrel.png
+  buckets.png
+  cup.png                     //check
+  dirt2.png
+  dirt.png
+  grass.png
+  lava.png
+  lavarock.png
+  rock.png                     //check
+  watergrass.png
+  water.png
+  princess.png
+
+Stephen Challener (AKA Redshrike)
+  female_walkcycle.png
+  male_walkcycle.png
+
+Charles Sanchez (AKA CharlesGabriel)
+  bat.png
+  big_worm.png
+  eyeball.png
+  ghost.png
+  pumpking.png
+  slime.png
+  small_worm.png
+  snake.png
+
+Barbara Rivera
+  malesoldierzombie.png
+
+Casper Nilsson
+  gravestones.png
+  tree_stump.png
+
+Chris Phillips
+  CPhillips--whitheredtree.png
+  
+Daniel Eddeland
+  sand.png
+  sandwater.png
+  magic.png
+  scrollsandblocks.png
+  
+Dethe Elza
+  brown_pants_in_walking_animation.png  - used by Jo„o Pimentel to compose BODY_skeleton2.png
+  eyepatch_in_walking_animation.png  - used by Jo„o Pimentel to compose BODY_skeleton2.png
+  red_bandana_in_walking_animation.png  - used by Jo„o Pimentel to compose BODY_skeleton2.png
+
+Emilio J. Sanchez-Sierra
+  Animated_Gear.png
+  
+Johann CHARLOT
+  tileset01.png
+ 
+Johannes Sj√∂lund
+  BODY_skeleton.png - used as-is and also used by Jo„o Pimentel to compose BODY_skeleton2.png
+  
+Jonas Klinger
+  Laserfence.png
+  Armor2Walk.png
+  
+Joshua Taylor
+  Vegies.png
+  
+Juan M. Rodriguez
+  maskman.png
+  
+Skyler Robert Colladay
+  dirt_night.png
+  grass_night.png
+  
+Stephen Challener
+  baldricfrontwalksheet copy.png
+  mage_walking_poses_sheet_copy.png
+  
+Thane & Stacey Brimhall
+  male_spritesheet.xcf - used by Jo„o Pimentel to compose workerman_walkcycle.png
+  bar_hp_mp.xcf - used by Jo„o Pimentel to create hp-bg.png and hp-fg.png
+
+
+--- SOUND -----
+
+HorrorPen
+  41 Random Sound Effects (2,4,7,8,12,15,16,24,32,35)
+
+p0ss
+  Spell Sounds Starter Pack (confusion, heal, zap2)
+
+Arthur
+  Warp sound 4 (garble1-1)
+
+--- FONTS -----
+
+CodeMan38
+  Press Start 2P
+
+Karolina Lach
+  Courgette
+
+Sideshow
+  Creepster

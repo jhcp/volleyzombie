@@ -1,0 +1,69 @@
+========================
+Software and source code
+========================
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+  For details on authorship, see AUTHORS.txt
+
+
+========================================
+Artwork
+========================================
+
+The Artwork in this repository is dual licensed under the Creative Commons
+Attribution-ShareAlike 3.0 Unported and the GNU General Public License
+as published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+You should have received a copy of the GNU General Public License
+along with this work.  If not, see <http://www.gnu.org/licenses/>.
+Likewise, you should have received a copy of the Creative Commons
+Attribution-ShareAlike 3.0 Unported legalcode with this work.  If not,
+see <http://creativecommons.org/licenses/by-sa/3.0/>.
+
+For details on authorship of various resources, see AUTHORS.txt
+
+
+========================
+Supporting software
+========================
+
+  Crafty, which is a programming library used in this software and provided
+  in this distribution, is free software dual licensed under the GNU General
+  Public License as published by the Free Software Foundation as well as
+  under the MIT License.
+
+  For more information on this supporting software, refer to 
+  <http://www.craftyjs.com/>
+
+
+========================================
+Sounds and other assets/content
+========================================
+
+Sounds and other non-software assets/contentwork in this repository are dual licensed under different license versions, all of them allowing the free use and distribution, among other rights. For further details, refer to the list of licenses below
+
+Fonts: Press Start 2P; Courgette; Creepster
+SIL Open Font License, 1.1
+
+41 Random Sound Effects (2,4,7,8,12,15,16,24,32,35)
+CC-BY 3.0
+
+Spell Sounds Starter Pack (confusion, heal, zap2)
+CC-BY-SA 3.0    GPL 3.0    GPL 2.0
+
+Warp sound 4 (garble1-1)
+GPL 2.0    GPL 3.0    CC-BY-SA 3.0
+ 
