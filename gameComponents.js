@@ -537,7 +537,8 @@ function initializeCraftyComponents()
               }
               else
               {
-                Crafty.audio.play('ouch');
+                if (this.life === 1) Crafty.audio.play('alert');
+                else Crafty.audio.play('ouch');
                 for(var i = 6; i > this.life; i--)     //update the life display
                 {
                   lifeSprite[i-1].visible=false;
@@ -715,7 +716,7 @@ function initializeCraftyComponents()
       {
         finishLevel();
       }
-      if(testingMode)
+      else if(testingMode)
       {
         if (this.isDown('0'))
         {

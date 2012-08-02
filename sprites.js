@@ -63,18 +63,17 @@ function defineImages()
     ],
     'smallMonstersSprites':
     [
-      {'name': 'bat', 'file': 'assets/images/char/bat.png'},                                //ok
+      {'name': 'bat', 'file': 'assets/images/char/bat.png'},
       {'name': 'worm_big', 'file': 'assets/images/char/big_worm.png', 'w':35 , 'h': 50},
-      {'name': 'eye_ball', 'file': 'assets/images/char/eyeball.png' , 'w':32 , 'h': 38},  //ok
+      {'name': 'eye_ball', 'file': 'assets/images/char/eyeball.png' , 'w':32 , 'h': 38},
       {'name': 'ghost', 'file': 'assets/images/char/ghost.png'      , 'w':40 , 'h': 46},
       {'name': 'pumpking', 'file': 'assets/images/char/pumpking.png', 'w':46 , 'h': 46},
-      {'name': 'slime', 'file': 'assets/images/char/slime.png'},                            //ok
-      {'name': 'worm_small', 'file': 'assets/images/char/small_worm.png'},                  //ok
-      {'name': 'snake', 'file': 'assets/images/char/snake.png'},                            //ok
+      {'name': 'slime', 'file': 'assets/images/char/slime.png'},                           
+      {'name': 'worm_small', 'file': 'assets/images/char/small_worm.png'},                 
+      {'name': 'snake', 'file': 'assets/images/char/snake.png'},
     ],
     'player':
     {
-//      'body': 'assets/images/char/workerman_walkcycle.png',
       'body': 'assets/images/char/workerman_walkcycle2.png',
       'bullet': 'assets/images/char/Animated_Gear.png',
     },
@@ -189,8 +188,6 @@ function setupSpriteMaps()
   Crafty.sprite(64, images.player.body,
   {
     player_sprite: [0, 0],
-/*     player_sprite_armor1: [0, 4],
-    player_sprite_armor2: [0, 8], */
   });
   Crafty.sprite(32, images.player.bullet,
   {

@@ -96,7 +96,7 @@ Thane & Stacey Brimhall
 --- SOUND -----
 
 HorrorPen
-  41 Random Sound Effects (2,4,7,8,12,15,16,24,32,35)
+  41 Random Sound Effects (2,4,7,8,12,15,16,24,32,35, 39)
 
 p0ss
   Spell Sounds Starter Pack (confusion, heal, zap2)

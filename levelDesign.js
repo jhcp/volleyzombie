@@ -145,7 +145,7 @@ function levelDesign()
       }
     }
   }
-  else if (level === 4)       //monsters logic for level 3:
+  else if (level === 4)       //monsters logic for level 4:
   {
     if (bouncedCounter >= 0 && bouncedCounter <= 16)
     {
@@ -197,7 +197,7 @@ function levelDesign()
       }
       else
       {
-        if (levelFrame % 120 === 0)     //200
+        if (levelFrame % 150 === 0)     //200
         {
           createMonster('skeleton');
         }
@@ -205,7 +205,7 @@ function levelDesign()
     }
     if (bouncedCounter >= 4 && bouncedCounter <= 14)
     {
-      if (levelFrame % 50 === 0)
+      if (levelFrame % 65 === 0)
       {
         createMonster('zombie');
       }
@@ -240,33 +240,33 @@ function levelDesign()
     }
     if (bouncedCounter >= 22 )
     {
-      if (levelFrame % 85 === 0)
+      if (levelFrame % 120 === 0)
       {
         createMonster('skeleton');
       }
     }
     if (bouncedCounter >= 24)
     {
-      if (levelFrame % 60 === 0)
+      if (levelFrame % 80 === 0)
       {
         createMonster('bat');
       }
     }
     if (bouncedCounter >= 25)
     {
-      if (levelFrame % 40 === 0)
+      if (levelFrame % 90 === 0)
       {
         createMonster('slime');
       }
     }
     if (bouncedCounter >= 26)
     {
-      if (levelFrame % 60 === 0)
+      if (levelFrame % 70 === 0)
       {
         createMonster('pumpking');
       }
     }
-    if (bouncedCounter >= 27)
+    if (bouncedCounter >= 28)
     {
       if (levelFrame % 55 === 0)
       {

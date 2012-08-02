@@ -2,7 +2,7 @@
 Volley Zombie
 =============
 
-This is a game where you play volleyball while kiling some zumbies, skeletons, 
+This is a game where you play volleyball while killing some zombies, skeletons, 
 and other monsters. It was created as an entry to The Liberation Pixel Cup.
 
 You play with Thomas, whom went off from work to wind down in the beach and got
@@ -19,7 +19,7 @@ effective, as no monster ever came back after being shot...
    S - move down
    A - move left
    D - move right
-   SPACE - jump
+   SPACE or SHIFT - jump
 
    Arrow keys - shoot
 
@@ -28,13 +28,13 @@ effective, as no monster ever came back after being shot...
 
 
 
-If you want to check for updates, visit http://www.cin.ufpe.br/~jhcp/volleyzombie
+If you want to check for updates or contribute to this game, visit https://github.com/jhcp/volleyzombie
 
 
 Running the game
 --------------------
 
-This game was built with HTML, Javascript and CSS, thus no compilation,
+This game was built with pure HTML, Javascript and CSS, thus no compilation,
 installation or build is required. All you have to do in order to play
 it is to open index.html in a web browser.
 

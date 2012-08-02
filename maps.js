@@ -360,7 +360,7 @@ var map5 =
     {'x': 3, 'y': 8, 'sprite': 'water_lava_top_right', 'type': 'GROUND_OBSTACLE'},
     
     /* {'x': 6, 'y': 0, 'sprite': 'cross_wood', 'type': 'ABC'}, */
-    {'x': 6, 'y': 1, 'sprite': 'water_lava_hole2', 'type': 'GROUND_OBSTACLE'},
+    {'x': 6, 'y': 2, 'sprite': 'water_lava_hole2', 'type': 'GROUND_OBSTACLE'},
     {'x': 12, 'y': 1, 'sprite': 'cross_wood', 'type': 'GROUND'},
     {'x': 13  , 'y': 1, 'sprite': 'cross_wood', 'type': 'GROUND'},
     {'x': 11, 'y': 5, 'sprite': 'rock_small_gray1', 'type': 'GROUND'},

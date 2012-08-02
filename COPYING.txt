@@ -36,19 +36,6 @@ see <http://creativecommons.org/licenses/by-sa/3.0/>.
 For details on authorship of various resources, see AUTHORS.txt
 
 
-========================
-Supporting software
-========================
-
-  Crafty, which is a programming library used in this software and provided
-  in this distribution, is free software dual licensed under the GNU General
-  Public License as published by the Free Software Foundation as well as
-  under the MIT License.
-
-  For more information on this supporting software, refer to 
-  <http://www.craftyjs.com/>
-
-
 ========================================
 Sounds and other assets/content
 ========================================
@@ -58,7 +45,7 @@ Sounds and other non-software assets/contentwork in this repository are dual lic
 Fonts: Press Start 2P; Courgette; Creepster
 SIL Open Font License, 1.1
 
-41 Random Sound Effects (2,4,7,8,12,15,16,24,32,35)
+41 Random Sound Effects (2,4,7,8,12,15,16,24,32,35, 39)
 CC-BY 3.0
 
 Spell Sounds Starter Pack (confusion, heal, zap2)

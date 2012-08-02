@@ -19,7 +19,7 @@
 /*****************************************
      some stuff to facilitate testing and debugging
 */
-var testingMode = true;
+var testingMode = false;
 var testingMode_tilesGrid = false;
 var testingMode_immortal = false;
 
@@ -108,7 +108,7 @@ window.onload = function ()
       setupSpriteMaps();
       loadingText.destroy();
 
-      if (testingMode){difficulty.hard=true; startLevel(5); Crafty.timer.simulateFrames(1400); /*Crafty.scene('mainMenu');*/}
+      if (testingMode){difficulty.hard=true; startLevel(5); Crafty.timer.simulateFrames(1400);}
       else
        Crafty.scene('introBeach');
     });
@@ -171,7 +171,7 @@ window.onload = function ()
   {
     Crafty.background('black');
     
-    optionCasual = Crafty.e('2D, DOM, Text, Keyboard, css_general')
+    Crafty.e('2D, DOM, Text, Keyboard, css_general')
       .attr({ w: 220, h: 18, x: 120, y: 20 })
       .text('DIFFICULTY LEVEL')
       .css({'text-align': 'center' })
@@ -193,7 +193,7 @@ window.onload = function ()
 
     var optionHard = Crafty.e('2D, DOM, Text, css_general')
       .attr({ w: 180, h: 18, x: 140, y: 160 })
-      .text('HARD')
+      .text('NORMAL')
       .css({'text-align': 'center' })
       .css({'font-size': '12px' })
       .css({'padding-top': '10px' })
@@ -256,12 +256,19 @@ window.onload = function ()
 
     //set-up an intro text, for while loading
     Crafty.background('black');
-    Crafty.e('2D, DOM, Text, css_general')
+    Crafty.e('2D, DOM, Text, Keyboard, css_general')
       .attr({ w: 480, h: 20, x: 0, y: 80 })
       .text('Game Over')
-      .css({ 'text-align': 'center' });
+      .css({ 'text-align': 'center' })
+      .bind('KeyDown', function ()
+      {
+        if (this.isDown('SPACE') )
+        {
+          Crafty.scene('mainMenu'); //restart the fun!
+        }
+      });
 
-    Crafty.e('2D, DOM, Text, Keyboard, css_general')
+   /*  Crafty.e('2D, DOM, Text, Keyboard, css_general')
       .attr({ w: 480, h: 20, x: 0, y: 120 })
       .text('Press SPACE to try it again')
       .css({ 'text-align': 'center' })
@@ -271,7 +278,7 @@ window.onload = function ()
         {
           Crafty.scene('mainMenu'); //restart the fun!
         };
-      });
+      }); */
       
     Crafty.audio.play('game_over');
   });
@@ -335,6 +342,7 @@ function loadAudioAssets()
   Crafty.audio.add('water', 'assets/sounds/12.ogg');
   Crafty.audio.add('turtle', 'assets/sounds/7.ogg');
   Crafty.audio.add('armor', 'assets/sounds/8.ogg');
+  Crafty.audio.add('alert', 'assets/sounds/39.ogg');
 }
 
 function changeBouncedCounter(amount)
