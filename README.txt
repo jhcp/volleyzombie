@@ -1,6 +1,4 @@
-=============
-Volley Zombie
-=============
+### Volley Zombie
 
 This is a game where you play volleyball while killing some zombies, skeletons, 
 and other monsters. It was created as an entry to The Liberation Pixel Cup.
@@ -13,26 +11,25 @@ in his field. I don't know what he shoots, but whatever it is, it is quite
 effective, as no monster ever came back after being shot...
 
 
- CONTROLS:
+	CONTROLS:
 
-   W - move up
-   S - move down
-   A - move left
-   D - move right
-   SPACE or SHIFT - jump
+	W - move up
+	S - move down
+	A - move left
+	D - move right
+	SPACE or SHIFT - jump
 
-   Arrow keys - shoot
+	Arrow keys - shoot
 
-   P - Pause
-   F11 - toggle fullscreen (most browsers)
+	P - Pause
+	F11 - toggle fullscreen (most browsers)
 
 
 
 If you want to check for updates or contribute to this game, visit https://github.com/jhcp/volleyzombie
 
 
-Running the game
---------------------
+### Running the game
 
 This game was built with pure HTML, Javascript and CSS, thus no compilation,
 installation or build is required. All you have to do in order to play
