@@ -42,7 +42,7 @@
 ## Monsters
 * Bat
     * *Speed:* 
-    * ![mark](mark.jpg) *Movement:* circle around the player
+    * ![mark](https://raw.github.com/jhcp/volleyzombie/master/mark.jpg) *Movement:* circle around the player
     * *Origin:* in the outer borders of the playable field
 * Eye Ball
     * *Speed:* 
