@@ -27,6 +27,7 @@ effective, as no monster ever came back after being shot...
 
 
 If you want to check for updates or contribute to this game, visit https://github.com/jhcp/volleyzombie
+You can play the most up-to-date version at http://jhcp.github.com/volleyzombie/
 
 
 ### Running the game
