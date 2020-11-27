@@ -1,6 +1,6 @@
 /*
 # this source file is part of Volley Zombie, a 2d online game
-# Copyright (C) 2012  Jo„o Henrique C. Pimentel
+# Copyright (C) 2012  Jo√£o Henrique C. Pimentel
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

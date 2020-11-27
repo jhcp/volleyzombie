@@ -2,7 +2,7 @@ Code authors
 ============
 
 This program was created and developed by
- - Jo„o Henrique C. Pimentel
+ - Jo√£o Henrique C. Pimentel
 
 
 Asset attribution
@@ -12,7 +12,7 @@ Assets were authored by the following people:
 
 --- IMAGES -----
 
-Lanea Zimmerman (AKA Sharm)∂
+Lanea Zimmerman (AKA Sharm)¬∂
   barrel.png
   buckets.png
   cup.png                     //check
@@ -57,9 +57,9 @@ Daniel Eddeland
   scrollsandblocks.png
   
 Dethe Elza
-  brown_pants_in_walking_animation.png  - used by Jo„o Pimentel to compose BODY_skeleton2.png
-  eyepatch_in_walking_animation.png  - used by Jo„o Pimentel to compose BODY_skeleton2.png
-  red_bandana_in_walking_animation.png  - used by Jo„o Pimentel to compose BODY_skeleton2.png
+  brown_pants_in_walking_animation.png  - used by Jo√£o Pimentel to compose BODY_skeleton2.png
+  eyepatch_in_walking_animation.png  - used by Jo√£o Pimentel to compose BODY_skeleton2.png
+  red_bandana_in_walking_animation.png  - used by Jo√£o Pimentel to compose BODY_skeleton2.png
 
 Emilio J. Sanchez-Sierra
   Animated_Gear.png
@@ -67,8 +67,8 @@ Emilio J. Sanchez-Sierra
 Johann CHARLOT
   tileset01.png
  
-Johannes Sj√∂lund
-  BODY_skeleton.png - used as-is and also used by Jo„o Pimentel to compose BODY_skeleton2.png
+Johannes Sj√É¬∂lund
+  BODY_skeleton.png - used as-is and also used by Jo√£o Pimentel to compose BODY_skeleton2.png
   
 Jonas Klinger
   Laserfence.png
@@ -89,8 +89,8 @@ Stephen Challener
   mage_walking_poses_sheet_copy.png
   
 Thane & Stacey Brimhall
-  male_spritesheet.xcf - used by Jo„o Pimentel to compose workerman_walkcycle.png
-  bar_hp_mp.xcf - used by Jo„o Pimentel to create hp-bg.png and hp-fg.png
+  male_spritesheet.xcf - used by Jo√£o Pimentel to compose workerman_walkcycle.png
+  bar_hp_mp.xcf - used by Jo√£o Pimentel to create hp-bg.png and hp-fg.png
 
 
 --- SOUND -----

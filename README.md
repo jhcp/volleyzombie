@@ -50,4 +50,4 @@ and minify the Javascript files
 
 
 
-Copyright 2012 Jo„o Henrique C. Pimentel
+Copyright 2012 Jo√£o Henrique C. Pimentel
