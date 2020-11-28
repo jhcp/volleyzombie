@@ -145,9 +145,15 @@ window.onload = function ()
       setupSpriteMaps();
       loadingText.destroy();
 
-      if (testingMode){difficulty.hard=true; startLevel(5); Crafty.timer.simulateFrames(1400);}
-      else
-       Crafty.scene('introBeach');
+      if (testingMode) {
+        difficulty.hard=true;
+        startLevel(5);
+        Crafty.timer.simulateFrames(1400);
+      }
+      else {
+        Crafty.scene('introBeach');
+        // Crafty.scene('mainMenu');
+      }
     });
     
 
