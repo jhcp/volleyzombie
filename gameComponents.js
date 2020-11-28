@@ -650,7 +650,7 @@ function initializeCraftyComponents()
              });
            }
         }
-        if ((level != 1) && (!difficulty.casual) && (levelFrame % 600 === 0))
+        if ((level != 1) && (levelFrame % 600 === 0))
         {
            var dice = Crafty.math.randomInt(0,4);
            if (dice === 0)
