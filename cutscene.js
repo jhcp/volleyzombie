@@ -758,7 +758,7 @@ function playLevel5Intro()
   .addScene({'action': function()
     {
       hideDialog();
-      showDialog('Of course we do, don\'t you? It\'s great for the winter', 180, 25);
+      showDialog('Of course we do, don\'t you? It\'s great during winter', 180, 25);
     } })
   .delay(250)
   .addScene({'action': function()
@@ -1103,8 +1103,14 @@ function playLevel1Interlude(cutscene)
   .addScene({'action': function()
   {
     hideDialog();
-    showDialog('Press SPACE to jump and hit the ball with your HEAD', 180, 90);
+    showDialog('Press SPACE or SHIFT to jump and hit the ball with your HEAD', 180, 90);
   } })
+  .delay(250)
+  .addScene({'action': function()
+      {
+          hideDialog();
+          showDialog('Make a lot of points to defeat me', 180, 90);
+      } })
   .delay(250)
 }
 
