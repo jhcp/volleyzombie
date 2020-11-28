@@ -70,9 +70,24 @@ var bouncedCounter = 0;            //the score in that level                    
 var bouncedCounterDisplay = null;  //an entity that displays the score            TODO: this probably should be somewhere else
 
 
+function redefineCraftyKeys() {
+  // at some point of browsers evolution, Crafty's code for handling key presses has stopped working.
+  // this function redefines the key codes used on the game, based on current browsers (as of the year 2020)
+  Crafty.keys.SPACE = ' ';
+  Crafty.keys.UP_ARROW = 'ArrowUp';
+  Crafty.keys.DOWN_ARROW = 'ArrowDown';
+  Crafty.keys.LEFT_ARROW = 'ArrowLeft';
+  Crafty.keys.RIGHT_ARROW = 'ArrowRight';
+  Crafty.keys.W = 'W';
+  Crafty.keys.A = 'A';
+  Crafty.keys.S = 'S';
+  Crafty.keys.D = 'D';
+}
+
 window.onload = function ()
 {
   Crafty.init(stageWidth*tileSize, stageHeight*tileSize, 30);
+  redefineCraftyKeys();
 
   initializeCraftyComponents();
 
@@ -123,7 +138,7 @@ window.onload = function ()
 
     //creates the characters that will be animated in this intro
     player = Crafty.e('Player, player_sprite, 2D, DOM, Ape, Jumper')
-      .attr({ x: -32, y: 180, w: 64, h: 64, z: 40 })  //define initial position
+      .attr({ x: -32, y: 180, w: 64, h: 64, z: 40 });  //define initial position
     boss = Crafty.e('2D, DOM, princess_sprite, Ape, Jumper')
       .attr({ x: 60, y: -80, w: 64, h: 64, z: 40});
 
