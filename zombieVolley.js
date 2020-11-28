@@ -74,6 +74,7 @@ function redefineCraftyKeys() {
   // at some point of browsers evolution, Crafty's code for handling key presses has stopped working.
   // this function redefines the key codes used on the game, based on current browsers (as of the year 2020)
   Crafty.keys.SPACE = ' ';
+  Crafty.keys.ENTER = 'Enter';
   Crafty.keys.UP_ARROW = 'ArrowUp';
   Crafty.keys.DOWN_ARROW = 'ArrowDown';
   Crafty.keys.LEFT_ARROW = 'ArrowLeft';
@@ -172,7 +173,7 @@ window.onload = function ()
       .trigger('StartBlinking')
       .bind('KeyDown', function ()
       {
-        if (this.isDown('SPACE') )
+        if (this.isDown('SPACE') || this.isDown('ENTER'))
         {
           Crafty.scene('mainMenu2');
           Crafty.audio.play('heal');
@@ -233,7 +234,7 @@ window.onload = function ()
           }
           selected = 1-selected;
         };
-        if (this.isDown('SPACE') )
+        if (this.isDown('SPACE') || this.isDown('ENTER'))
         {
           if (selected === 0)
           {
@@ -277,7 +278,7 @@ window.onload = function ()
       .css({ 'text-align': 'center' })
       .bind('KeyDown', function ()
       {
-        if (this.isDown('SPACE') )
+        if (this.isDown('SPACE') || this.isDown('ENTER'))
         {
           Crafty.scene('mainMenu'); //restart the fun!
         }
@@ -314,7 +315,7 @@ window.onload = function ()
         .css({ 'text-align': 'center' })
         .bind('KeyDown', function ()
         {
-          if (this.isDown('SPACE') )
+          if (this.isDown('SPACE') || this.isDown('ENTER'))
           {
             Crafty.scene('mainMenu'); //restart the fun!
           };
@@ -329,7 +330,7 @@ window.onload = function ()
         .css({ 'text-align': 'center' })
         .bind('KeyDown', function ()
         {
-          if (this.isDown('SPACE') )
+          if (this.isDown('SPACE') || this.isDown('ENTER') )
           {
             Crafty.scene('mainMenu'); //restart the fun!
           };

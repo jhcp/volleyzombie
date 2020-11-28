@@ -1191,7 +1191,7 @@ Crafty.c('Cutscene',
     this.requires('Keyboard')
       .bind('KeyDown', function ()
       {
-        if (this.isDown('SPACE'))
+        if (this.isDown('SPACE') || this.isDown('ENTER'))
         {
           //this._skip();
           if (this.storyScene[this.currentScene].type === 'DELAY'
