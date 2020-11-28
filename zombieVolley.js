@@ -1,6 +1,6 @@
 /*
 # this source file is part of Volley Zombie, a 2d online game
-# Copyright (C) 2012  Jo„o Henrique C. Pimentel
+# Copyright (C) 2012  Jo√£o Henrique C. Pimentel
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -70,9 +70,46 @@ var bouncedCounter = 0;            //the score in that level                    
 var bouncedCounterDisplay = null;  //an entity that displays the score            TODO: this probably should be somewhere else
 
 
+function redefineCraftyKeys() {
+  // at some point of browsers evolution, Crafty's code for handling key presses has stopped working.
+  // this function redefines the key codes used on the game, based on current browsers (as of the year 2020)
+  Crafty.keys.SPACE = ' ';
+  Crafty.keys.ENTER = 'Enter';
+  Crafty.keys.UP_ARROW = 'ArrowUp';
+  Crafty.keys.DOWN_ARROW = 'ArrowDown';
+  Crafty.keys.LEFT_ARROW = 'ArrowLeft';
+  Crafty.keys.RIGHT_ARROW = 'ArrowRight';
+  Crafty.keys.SHIFT = 'Shift';
+  Crafty.keys.NUMPAD_0 = '0';
+  Crafty.keys.W = 'W';
+  Crafty.keys.A = 'A';
+  Crafty.keys.S = 'S';
+  Crafty.keys.D = 'D';
+  Crafty.keys.P = 'P';
+  Crafty.keys.C = 'C';
+  Crafty.keys.w = 'w';
+  Crafty.keys.a = 'a';
+  Crafty.keys.s = 's';
+  Crafty.keys.d = 'd';
+  Crafty.keys.p = 'p';
+  Crafty.keys.c = 'c';
+  Crafty.keys['0'] = '0';
+  Crafty.keys['1'] = '1';
+  Crafty.keys['2'] = '2';
+  Crafty.keys['3'] = '3';
+  Crafty.keys['4'] = '4';
+  Crafty.keys['5'] = '5';
+  Crafty.keys['6'] = '6';
+  Crafty.keys['7'] = '7';
+  Crafty.keys['8'] = '8';
+  Crafty.keys['9'] = '9';
+
+}
+
 window.onload = function ()
 {
   Crafty.init(stageWidth*tileSize, stageHeight*tileSize, 30);
+  redefineCraftyKeys();
 
   initializeCraftyComponents();
 
@@ -108,9 +145,15 @@ window.onload = function ()
       setupSpriteMaps();
       loadingText.destroy();
 
-      if (testingMode){difficulty.hard=true; startLevel(5); Crafty.timer.simulateFrames(1400);}
-      else
-       Crafty.scene('introBeach');
+      if (testingMode) {
+        difficulty.hard=true;
+        startLevel(5);
+        Crafty.timer.simulateFrames(1400);
+      }
+      else {
+        Crafty.scene('introBeach');
+        // Crafty.scene('mainMenu');
+      }
     });
     
 
@@ -123,7 +166,7 @@ window.onload = function ()
 
     //creates the characters that will be animated in this intro
     player = Crafty.e('Player, player_sprite, 2D, DOM, Ape, Jumper')
-      .attr({ x: -32, y: 180, w: 64, h: 64, z: 40 })  //define initial position
+      .attr({ x: -32, y: 180, w: 64, h: 64, z: 40 });  //define initial position
     boss = Crafty.e('2D, DOM, princess_sprite, Ape, Jumper')
       .attr({ x: 60, y: -80, w: 64, h: 64, z: 40});
 
@@ -157,7 +200,7 @@ window.onload = function ()
       .trigger('StartBlinking')
       .bind('KeyDown', function ()
       {
-        if (this.isDown('SPACE') )
+        if (this.isDown('SPACE') || this.isDown('ENTER'))
         {
           Crafty.scene('mainMenu2');
           Crafty.audio.play('heal');
@@ -193,7 +236,7 @@ window.onload = function ()
 
     var optionHard = Crafty.e('2D, DOM, Text, css_general')
       .attr({ w: 180, h: 18, x: 140, y: 160 })
-      .text('NORMAL')
+      .text('HARD')
       .css({'text-align': 'center' })
       .css({'font-size': '12px' })
       .css({'padding-top': '10px' })
@@ -203,7 +246,8 @@ window.onload = function ()
 
     optionCasual.bind('KeyDown', function ()
     {
-        if (    this.isDown('W') || this.isDown('A') || this.isDown('S') || this.isDown('D')
+        if (    this.isDown('W') || this.isDown('w') || this.isDown('A')|| this.isDown('a')
+             || this.isDown('S') || this.isDown('s') || this.isDown('D')|| this.isDown('d')
              || this.isDown('UP_ARROW') || this.isDown('DOWN_ARROW') || this.isDown('LEFT_ARROW') || this.isDown('RIGHT_ARROW') )
         {
           if (selected === 0)
@@ -218,7 +262,7 @@ window.onload = function ()
           }
           selected = 1-selected;
         };
-        if (this.isDown('SPACE') )
+        if (this.isDown('SPACE') || this.isDown('ENTER'))
         {
           if (selected === 0)
           {
@@ -262,7 +306,7 @@ window.onload = function ()
       .css({ 'text-align': 'center' })
       .bind('KeyDown', function ()
       {
-        if (this.isDown('SPACE') )
+        if (this.isDown('SPACE') || this.isDown('ENTER'))
         {
           Crafty.scene('mainMenu'); //restart the fun!
         }
@@ -299,7 +343,7 @@ window.onload = function ()
         .css({ 'text-align': 'center' })
         .bind('KeyDown', function ()
         {
-          if (this.isDown('SPACE') )
+          if (this.isDown('SPACE') || this.isDown('ENTER'))
           {
             Crafty.scene('mainMenu'); //restart the fun!
           };
@@ -314,7 +358,7 @@ window.onload = function ()
         .css({ 'text-align': 'center' })
         .bind('KeyDown', function ()
         {
-          if (this.isDown('SPACE') )
+          if (this.isDown('SPACE') || this.isDown('ENTER') )
           {
             Crafty.scene('mainMenu'); //restart the fun!
           };
@@ -383,7 +427,7 @@ function setupDefaultElements(level)
   //PLAYER
   player = Crafty.e('Player, player_sprite, 2D, DOM, Multiway, Collision, Ape, Shooter, GameManager, Blink, Hurtable, Jumper')
     .attr({ x: -100, y: 100, w: 64, h: 64, z: 500 })  //define initial position
-    .multiway(4, { W: -90, S: 90, A: 180, D: 0 }) //define the keys for controlling this entity
+    .multiway(4, { W: -90, S: 90, A: 180, D: 0, w: -90, s: 90, a: 180, d: 0 }) //define the keys for controlling this entity
     .collision(new Crafty.polygon
     (
       [20, 15], [40, 15],

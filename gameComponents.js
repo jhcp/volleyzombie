@@ -1,6 +1,6 @@
 /*
 # this source file is part of Volley Zombie, a 2d online game
-# Copyright (C) 2012  Jo„o Henrique C. Pimentel
+# Copyright (C) 2012  Jo√£o Henrique C. Pimentel
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -650,7 +650,7 @@ function initializeCraftyComponents()
              });
            }
         }
-        if ((level != 1) && (!difficulty.casual) && (levelFrame % 600 === 0))
+        if ((level != 1) && (levelFrame % 600 === 0))
         {
            var dice = Crafty.math.randomInt(0,4);
            if (dice === 0)
@@ -705,7 +705,7 @@ function initializeCraftyComponents()
     })
      .bind('KeyDown', function ()
     {
-      if (this.isDown('P') )
+      if (this.isDown('P') || this.isDown('p') )
       {
         //storyMode = !storyMode;
         Crafty.pause();
@@ -750,7 +750,7 @@ function initializeCraftyComponents()
         {
           startLevel(5);
         } */
-        if (this.isDown('C'))
+        if (this.isDown('C') || this.isDown('c'))
         {
           player.armor = (player.armor + 1)%3;
           player.faceDown();
