@@ -10,7 +10,8 @@ and jump (SPACE or SHIFT).
 He has to jump and hit the ball with his head to return it to the boss. 
 The goal is to return a certain number of balls, which varies depending on the stage and on the difficulty. 
 
-When the player misses a ball, he looses point(s). If the boss missessd a ball, the player wins 1 ball
+When the player misses a ball, he looses point(s). If the boss missess a ball, the player wins 1 point.
+
 During the match, monsters will appear in the player's field. When the monster is hit by a bullet, it dies.
 If the player is hit by a monster, it gets hurt and gets temporary invincibility. If the player has zero points and
 misses a ball, it gets hurt as well.
@@ -18,9 +19,9 @@ misses a ball, it gets hurt as well.
 When life is depleted, it's game over.
 
 During the matches, magical items will appear in the player's field. These items will trigger a special
-effect when caught by a player.
+effect when caught by a player (see below).
 
-It is possible to pause by pressing P
+It is possible to pause by pressing P.
 
 ## Difficulty
 
