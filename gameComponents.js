@@ -705,7 +705,7 @@ function initializeCraftyComponents()
     })
      .bind('KeyDown', function ()
     {
-      if (this.isDown('P') )
+      if (this.isDown('P') || this.isDown('p') )
       {
         //storyMode = !storyMode;
         Crafty.pause();
@@ -750,7 +750,7 @@ function initializeCraftyComponents()
         {
           startLevel(5);
         } */
-        if (this.isDown('C'))
+        if (this.isDown('C') || this.isDown('c'))
         {
           player.armor = (player.armor + 1)%3;
           player.faceDown();

@@ -79,10 +79,31 @@ function redefineCraftyKeys() {
   Crafty.keys.DOWN_ARROW = 'ArrowDown';
   Crafty.keys.LEFT_ARROW = 'ArrowLeft';
   Crafty.keys.RIGHT_ARROW = 'ArrowRight';
+  Crafty.keys.SHIFT = 'Shift';
+  Crafty.keys.NUMPAD_0 = '0';
   Crafty.keys.W = 'W';
   Crafty.keys.A = 'A';
   Crafty.keys.S = 'S';
   Crafty.keys.D = 'D';
+  Crafty.keys.P = 'P';
+  Crafty.keys.C = 'C';
+  Crafty.keys.w = 'w';
+  Crafty.keys.a = 'a';
+  Crafty.keys.s = 's';
+  Crafty.keys.d = 'd';
+  Crafty.keys.p = 'p';
+  Crafty.keys.c = 'c';
+  Crafty.keys['0'] = '0';
+  Crafty.keys['1'] = '1';
+  Crafty.keys['2'] = '2';
+  Crafty.keys['3'] = '3';
+  Crafty.keys['4'] = '4';
+  Crafty.keys['5'] = '5';
+  Crafty.keys['6'] = '6';
+  Crafty.keys['7'] = '7';
+  Crafty.keys['8'] = '8';
+  Crafty.keys['9'] = '9';
+
 }
 
 window.onload = function ()
@@ -209,7 +230,7 @@ window.onload = function ()
 
     var optionHard = Crafty.e('2D, DOM, Text, css_general')
       .attr({ w: 180, h: 18, x: 140, y: 160 })
-      .text('NORMAL')
+      .text('HARD')
       .css({'text-align': 'center' })
       .css({'font-size': '12px' })
       .css({'padding-top': '10px' })
@@ -219,7 +240,8 @@ window.onload = function ()
 
     optionCasual.bind('KeyDown', function ()
     {
-        if (    this.isDown('W') || this.isDown('A') || this.isDown('S') || this.isDown('D')
+        if (    this.isDown('W') || this.isDown('w') || this.isDown('A')|| this.isDown('a')
+             || this.isDown('S') || this.isDown('s') || this.isDown('D')|| this.isDown('d')
              || this.isDown('UP_ARROW') || this.isDown('DOWN_ARROW') || this.isDown('LEFT_ARROW') || this.isDown('RIGHT_ARROW') )
         {
           if (selected === 0)
@@ -399,7 +421,7 @@ function setupDefaultElements(level)
   //PLAYER
   player = Crafty.e('Player, player_sprite, 2D, DOM, Multiway, Collision, Ape, Shooter, GameManager, Blink, Hurtable, Jumper')
     .attr({ x: -100, y: 100, w: 64, h: 64, z: 500 })  //define initial position
-    .multiway(4, { W: -90, S: 90, A: 180, D: 0 }) //define the keys for controlling this entity
+    .multiway(4, { W: -90, S: 90, A: 180, D: 0, w: -90, s: 90, a: 180, d: 0 }) //define the keys for controlling this entity
     .collision(new Crafty.polygon
     (
       [20, 15], [40, 15],
