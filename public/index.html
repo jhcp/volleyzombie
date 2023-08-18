@@ -1,0 +1,162 @@
+<!--
+# this source file is part of Volley Zombie, a 2d online game
+# Copyright (C) 2012  João Henrique C. Pimentel
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Volley Zombie!</title>
+  <meta name="description" content="Volley Zombie, a game created for The Liberated Pixel Cup. Play a simple volley game while shooting some zombies and other monsters!">
+  <meta name="author" content="João Pimentel">
+
+  <style type="text/css">
+        
+    @font-face {
+      font-family: 'Press Start 2P';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Press Start 2P'), local('PressStart2P-Regular'), url(assets/fonts/pressStart2P.woff) format('woff');
+    }
+    @font-face {
+      font-family: 'Courgette';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Courgette Regular'), local('Courgette-Regular'), url(assets/fonts/courgette.woff) format('woff');
+    }
+    @font-face {
+      font-family: 'Creepster';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Creepster'), local('Creepster-Regular'), url(assets/fonts/creepster.woff) format('woff');
+    }
+
+    body, html
+    {
+      margin:0;
+      padding: 0;
+      overflow:hidden;
+      font-family: 'Press Start 2P', cursive;
+      font-size:8px;
+      background-color:black;
+      color:white;
+    }
+    #cr-stage
+    {
+      border:2px solid black;
+      margin:5px auto;
+      zoom: 200%;
+      color:white;
+      -moz-transform: scale(1.5);
+    }
+    #log
+    {
+      position:absolute;
+      top:5px;
+      left:5px;
+    }
+    .css_dialog
+    {
+      display:block;
+      font-family: 'Press Start 2P', cursive;
+      font-size:8px;
+      color:rgb(20,20,20);
+    }
+    .css_general
+    {
+      font-family: 'Press Start 2P', cursive;
+      font-size:10px;
+      color:white;
+      display:block;
+    }
+    .css_volleyTitle
+    {
+      color:rgb(255,99,0);
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: white;
+      text-stroke-width: 2px;
+      text-stroke-color: white;
+    }
+    .css_levelTitle
+    {
+       -webkit-text-stroke-width: 1px;
+       -webkit-text-stroke-color: green;
+       text-shadow:
+         3px 3px 0 green,
+       -1px -1px 0 green,
+        1px -1px 0 green,
+        -1px 1px 0 green,
+         1px 1px 0 green;
+    }
+    a
+    {
+      color:rgb(50, 50, 50);
+      text-decoration:none;
+    }
+    a:hover
+    {
+      color:rgb(230, 230, 230);
+    }
+    #fullscreenTip
+    {
+      color:rgb(230, 230, 230);
+      text-align:center;
+    }
+    #optionsBar {padding-right:40px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+<center>
+<table> <!-- I hope nobody sees this table... ;)  -->
+<tr><td id="fullscreenTip" colspan=2> Press F11 for fullscreen fun! </td></tr>
+<tr id="test"><td colspan=2>
+<div id="cr-stage"></div>
+</td></tr>
+
+<tr id="optionsBar">
+  <td align="left"><a href="noZoom.html">no zoom</a></td>
+  <td align="right"><a target="_blank" href="https://github.com/jhcp/volleyzombie/blob/master/GAME-DESIGN.md"> help</a>
+    <a target="_blank" href="credits.html"> / about</a></td>
+</tr>
+</table>
+</center>
+
+  <script src="assets/crafty-min.js"></script>
+  <script src="sprites.js"></script>
+  <script src="intro.js"></script>
+  <script src="maps.js"></script>
+  <script src="enemies.js"></script>
+  <script src="levelDesign.js"></script>
+  <script src="gameComponents.js"></script>
+  <script src="cutscene.js"></script>
+  <script src="zombieVolley.js"></script>
+
+<script>
+nozoom = false;
+
+setTimeout(function (){document.getElementById('fullscreenTip').style.display = 'none';}, 90000);
+window.onbeforeunload = function (){return 'By leaving this page you will loose your progress in this game'};
+
+</script>
+</body>
+</html>
